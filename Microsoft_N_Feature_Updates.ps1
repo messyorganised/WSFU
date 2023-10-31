@@ -1,6 +1,4 @@
-﻿# Script to install Windows Update and Feature updates
-
-# Install the Windows Update module if it's not present
+#Install the Windows Update module if it's not present
 if (-not (Get-InstalledModule -Name "PSWindowsUpdate" -ErrorAction SilentlyContinue)) {
     Write-Host "
 |========================================|
@@ -32,7 +30,7 @@ else {
 }
 
 
-# Check and install Feature updates (Upgrades)
+#Check and install Feature updates (Upgrades)
 Write-Host "
 |============================================|
 
